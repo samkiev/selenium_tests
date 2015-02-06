@@ -1,0 +1,2 @@
+class Watir_driver_example
+end
