@@ -6,7 +6,6 @@ browser = Selenium::WebDriver.for :chrome
 
 browser.get 'http://demo.redmine.org'
 
-browser.get 'http://demo.redmine.org'
 add_to_login = "622"
 login = "testuser" + add_to_login
 password = login
@@ -46,7 +45,7 @@ subject_support = "support_issue"
               puts 'Registration failed'
 
             end
-            #SAVE ID wich use to find user
+            #SAVE ID witch use to find user
               id_user = browser.find_element(class: "active").attribute("href")[-5,5]
                   puts "Id of new user = " + id_user
     end
